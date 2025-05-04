@@ -103,6 +103,19 @@
 
 Фичи по удалению склада и контейнера довольно простые, поэтому я не буду здесь их показывать
 
+
+• Что было добавлено нового: 
+
+Была добавлена сортировка товаров и складов по их свойствам. Сортировка товаров выглядит примерно так: 
+
+![Безымянный](https://github.com/user-attachments/assets/fe468d26-ee6c-4554-a278-b841727a93e3)
+![Безымянный2](https://github.com/user-attachments/assets/a7bf6bea-accf-4e77-a7f4-2cb92fb5d3c3)
+
+Сортировка складов:
+
+![Безымянный3](https://github.com/user-attachments/assets/cd9aa931-dcf5-4617-822c-937f8fbcca8e)
+![Безымянный4](https://github.com/user-attachments/assets/1b19b71a-f4ba-49ed-90fe-ebd3b95cdb7d)
+
 • Структура приложения
 
 Приложение состоит из четырех проектов: Data, Entities, Handlers и WarehouseConsole. В Data содержится класс Database, который имитирует базу данных. Также содержится класс Repository, в котором содержатся методы CRUD операций над объектами. В классе Injection прописаны сервисы, которые мы регистрируем в DependencyInjection. 
