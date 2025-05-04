@@ -24,6 +24,9 @@ public class Product
     {
         if (string.IsNullOrWhiteSpace(name))
             return ErrorTypes.IsRequired("имя");
+
+        if (name.Length > 30)
+            return new Error("Некорректное имя", "Длина имени должна быть не более 30 знаков");
         
         var product = new Product(Guid.NewGuid(), productType, name, volume);
         

@@ -37,6 +37,9 @@ public class Warehouse
         if (string.IsNullOrWhiteSpace(name))
             return ErrorTypes.IsRequired("имя");
         
+        if (name.Length > 30)
+            return new Error("Некорректное имя", "Длина имени должна быть не более 30 знаков");
+        
         var warehouse = new Warehouse(Guid.NewGuid(), name, volume, location);
 
         return warehouse;
@@ -46,6 +49,9 @@ public class Warehouse
     {
         if (string.IsNullOrWhiteSpace(name))
             return ErrorTypes.IsRequired("имя");
+        
+        if (name.Length > 30)
+            return new Error("Некорректное имя", "Длина имени должна быть не более 30 знаков");
 
         var oldVolume = Volume;
         Volume = volume;

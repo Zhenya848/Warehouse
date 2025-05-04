@@ -20,11 +20,23 @@ public record Location
         if (string.IsNullOrWhiteSpace(country))
             return ErrorTypes.IsRequired("страна");
         
+        if (country.Length > 30)
+            return new Error("Некорректное название страны", 
+                "Длина названия страны должна быть не более 30 знаков");
+        
         if (string.IsNullOrWhiteSpace(city))
             return ErrorTypes.IsRequired("город");
         
+        if (city.Length > 30)
+            return new Error("Некорректное название города", 
+                "Длина названия города должна быть не более 30 знаков");
+        
         if (string.IsNullOrWhiteSpace(address))
             return ErrorTypes.IsRequired("адрес");
+        
+        if (address.Length > 30)
+            return new Error("Некорректное название адреса", 
+                "Длина названия адреса должна быть не более 30 знаков");
         
         var location = new Location(country, city, address);
 
