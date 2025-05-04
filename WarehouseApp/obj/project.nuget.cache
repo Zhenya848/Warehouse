@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NVEJngdxJM4=",
+  "dgSpecHash": "wZ1DvGfV/4Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseConsole\\WarehouseConsole.csproj",
+  "projectFilePath": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseApp\\WarehouseApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Z\\.nuget\\packages\\csharpfunctionalextensions\\3.6.0\\csharpfunctionalextensions.3.6.0.nupkg.sha512",
     "C:\\Users\\Z\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.4\\microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",

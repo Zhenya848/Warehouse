@@ -1,9 +1,9 @@
 ﻿using Data;
 using Handlers;
 using Microsoft.Extensions.DependencyInjection;
-using WarehouseConsole.Warehouses;
+using WarehouseApp.Warehouses;
 
-namespace WarehouseConsole;
+namespace WarehouseApp;
 
 public static class Injection
 {
@@ -12,7 +12,7 @@ public static class Injection
         services.AddSingleton<Application>();
         
         services.AddSingleton<ProductsConsole>();
-        services.AddSingleton<Warehouses.WarehouseConsole>();
+        services.AddSingleton<WarehouseConsole>();
         services.AddSingleton<ProductTypesConsole>();
         services.AddSingleton<ContainerConsole>();
         

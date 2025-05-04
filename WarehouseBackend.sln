@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseConsole", "WarehouseConsole\WarehouseConsole.csproj", "{608DD3A7-5B99-48A9-BFC8-DB0C12152EBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseApp", "WarehouseApp\WarehouseApp.csproj", "{608DD3A7-5B99-48A9-BFC8-DB0C12152EBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{74BE6235-DBD8-49EF-BA08-A33F0F44E2B3}"
 EndProject

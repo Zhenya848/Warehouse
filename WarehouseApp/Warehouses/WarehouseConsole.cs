@@ -5,7 +5,7 @@ using Handlers.Warehouses.Delete;
 using Handlers.Warehouses.Get;
 using Handlers.Warehouses.Update;
 
-namespace WarehouseConsole.Warehouses;
+namespace WarehouseApp.Warehouses;
 
 public class WarehouseConsole
 {
@@ -13,20 +13,17 @@ public class WarehouseConsole
     private readonly GetWarehousesHandler _getWarehousesHandler;
     private readonly UpdateWarehouseHandler _updateWarehouseHandler;
     private readonly DeleteWarehouseHandler _deleteWarehouseHandler;
-    private readonly DeleteContainerHandler _deleteContainerHandler;
 
     public WarehouseConsole(
         CreateWarehouseHandler createWarehouseHandler,
         GetWarehousesHandler getWarehousesHandler,
         UpdateWarehouseHandler updateWarehouseHandler,
-        DeleteWarehouseHandler deleteWarehouseHandler,
-        DeleteContainerHandler deleteContainerHandler)
+        DeleteWarehouseHandler deleteWarehouseHandler)
     {
         _createWarehouseHandler = createWarehouseHandler;
         _getWarehousesHandler = getWarehousesHandler;
         _updateWarehouseHandler = updateWarehouseHandler;
         _deleteWarehouseHandler = deleteWarehouseHandler;
-        _deleteContainerHandler = deleteContainerHandler;
     }
     
     public void WarehouseCreating()
@@ -64,8 +61,8 @@ public class WarehouseConsole
         
         Console.ReadKey();
     }
-
-    private void ShowAllContainers(Warehouse warehouse)
+    
+    public void ShowAllContainers(Warehouse warehouse)
     {
         for (int j = 0; j < warehouse.Containers.Count; j++)
         {
@@ -198,7 +195,7 @@ public class WarehouseConsole
         if (result.IsFailure)
             Console.WriteLine(result.Error.ToResponse());
         else
-            Console.WriteLine("Склад успешно обновлен!");
+            Console.WriteLine("\nСклад успешно обновлен!");
 
         Console.ReadKey();
     }
@@ -220,39 +217,7 @@ public class WarehouseConsole
         if (result.IsFailure)
             Console.WriteLine(result.Error.ToResponse());
         else
-            Console.WriteLine("Склад успешно уничтожен!");
-        
-        Console.ReadKey();
-    }
-
-    public void WarehouseDeleteContainer()
-    {
-        Console.WriteLine("\nУбрать контейнер из склада");
-        var warehouses = ShowAllWarehouses(false);
-
-        var index = Extensions.GetIntFromReadLine("\nВыберите номер склада: ") - 1;
-        
-        if (index < 0 || index >= warehouses.Count)
-            return;
-        
-        var warehouse = warehouses[index];
-        
-        ShowAllContainers(warehouse);
-
-        var indexOfContainer = Extensions
-            .GetIntFromReadLine("\nВыберите номер контейнера, который хотите убрать: ") - 1;
-        
-        if (indexOfContainer < 0 || indexOfContainer >= warehouse.Containers.Count)
-            return;
-        
-        var command = new DeleteContainerCommand(warehouse.Id, warehouse.Containers[indexOfContainer].Id);
-        
-        var result = _deleteContainerHandler.Handle(command);
-        
-        if (result.IsFailure)
-            Console.WriteLine(result.Error.ToResponse());
-        else
-            Console.WriteLine("Контейнер успешно убран!");
+            Console.WriteLine("\nСклад успешно уничтожен!");
         
         Console.ReadKey();
     }

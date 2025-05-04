@@ -4,7 +4,7 @@ using Handlers.Products.Delete;
 using Handlers.Products.Get;
 using Handlers.ProductTypes.Get;
 
-namespace WarehouseConsole.Warehouses;
+namespace WarehouseApp.Warehouses;
 
 public class ProductsConsole
 {

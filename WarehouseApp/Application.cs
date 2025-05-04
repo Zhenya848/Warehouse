@@ -1,6 +1,6 @@
-﻿using WarehouseConsole.Warehouses;
+﻿using WarehouseApp.Warehouses;
 
-namespace WarehouseConsole;
+namespace WarehouseApp;
 
 public class Application
 {
@@ -37,7 +37,8 @@ public class Application
             Console.WriteLine("8. Уничтожить склад");
             Console.WriteLine("9. Убрать контейнер из склада");
             Console.WriteLine("10. Удалить товар");
-            Console.WriteLine("11.Удалить тип товара");
+            Console.WriteLine("11. Удалить тип товара");
+            Console.WriteLine("12. Переместить контейнер с одного склада в другой");
 
             var choose = Extensions.GetFloatFromReadLine("\nВаш выбор: ");
 
@@ -68,13 +69,16 @@ public class Application
                     _warehouseConsole.WarehouseDelete();
                     break;
                 case 9:
-                    _warehouseConsole.WarehouseDeleteContainer();
+                    _containerConsole.WarehouseDeleteContainer();
                     break;
                 case 10:
                     _productsConsole.DeleteProduct();
                     break;
                 case 11:
                     _productTypesConsole.ProductTypeDelete();
+                    break;
+                case 12:
+                    _containerConsole.MoveContainer();
                     break;
             }
 
