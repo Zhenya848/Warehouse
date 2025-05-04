@@ -1,4 +1,4 @@
-﻿namespace WarehouseBackend;
+﻿namespace WarehouseConsole;
 
 public class Application
 {

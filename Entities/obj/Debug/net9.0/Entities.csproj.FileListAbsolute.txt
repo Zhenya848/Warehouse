@@ -10,3 +10,4 @@ C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\Warehous
 C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Entities\obj\Debug\net9.0\refint\Entities.dll
 C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Entities\obj\Debug\net9.0\Entities.pdb
 C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Entities\obj\Debug\net9.0\ref\Entities.dll
+C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Entities\obj\Debug\net9.0\Entities.sourcelink.json

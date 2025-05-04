@@ -5,7 +5,7 @@ using Handlers.Products.Get;
 using Handlers.ProductTypes.Get;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseBackend;
+namespace WarehouseConsole;
 
 public class ProductsConsole
 {

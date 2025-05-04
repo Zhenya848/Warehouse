@@ -3,7 +3,7 @@ using Handlers.ProductTypes.Delete;
 using Handlers.ProductTypes.Get;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseBackend;
+namespace WarehouseConsole;
 
 public class ProductTypesConsole
 {
