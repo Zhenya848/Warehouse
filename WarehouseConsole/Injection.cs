@@ -2,7 +2,7 @@
 using Handlers;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseBackend;
+namespace WarehouseConsole;
 
 public static class Injection
 {

@@ -294,11 +294,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\WarehouseBackend\\WarehouseBackend.csproj",
-      "projectName": "WarehouseBackend",
-      "projectPath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\WarehouseBackend\\WarehouseBackend.csproj",
+      "projectUniqueName": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\WarehouseConsole\\WarehouseConsole.csproj",
+      "projectName": "WarehouseConsole",
+      "projectPath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\WarehouseConsole\\WarehouseConsole.csproj",
       "packagesPath": "C:\\Users\\belov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\WarehouseBackend\\obj\\",
+      "outputPath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\WarehouseConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

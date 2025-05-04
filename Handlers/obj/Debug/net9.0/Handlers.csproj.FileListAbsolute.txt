@@ -13,3 +13,4 @@ C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\Warehous
 C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Handlers\obj\Debug\net9.0\refint\Handlers.dll
 C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Handlers\obj\Debug\net9.0\Handlers.pdb
 C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Handlers\obj\Debug\net9.0\ref\Handlers.dll
+C:\Users\belov\OneDrive\Рабочий стол\Projects\CSharp\Console\WarehouseBackend\Handlers\obj\Debug\net9.0\Handlers.sourcelink.json

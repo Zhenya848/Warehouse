@@ -11,7 +11,7 @@ using Handlers.Warehouses.Create;
 using Handlers.Warehouses.Get;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseBackend;
+namespace WarehouseConsole;
 
 public class Program
 {

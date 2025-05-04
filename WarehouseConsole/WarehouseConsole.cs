@@ -6,7 +6,7 @@ using Handlers.Warehouses.Get;
 using Handlers.Warehouses.Update;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseBackend;
+namespace WarehouseConsole;
 
 public class WarehouseConsole
 {

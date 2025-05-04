@@ -1,6 +1,6 @@
 ﻿using Handlers.Containers.Create;
 
-namespace WarehouseBackend;
+namespace WarehouseConsole;
 
 public class ContainerConsole
 {
