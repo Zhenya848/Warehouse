@@ -4,7 +4,7 @@ using Handlers.Repositories;
 
 namespace Handlers.ProductTypes.Get;
 
-public class GetProductTypesHandler : IHandler<IEnumerable<ProductType>>
+public class GetProductTypesHandler : ICommandHandler<string, IEnumerable<ProductType>>
 {
     private readonly IRepository _repository;
 
@@ -13,6 +13,6 @@ public class GetProductTypesHandler : IHandler<IEnumerable<ProductType>>
         _repository = repository;
     }
     
-    public IEnumerable<ProductType> Handle() =>
+    public IEnumerable<ProductType> Handle(string? orderField = null) =>
         _repository.GetProductTypes().OrderBy(n => n.Name);
 }

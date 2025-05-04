@@ -7,7 +7,7 @@ using Handlers.Repositories;
 
 namespace Handlers.Warehouses.Create;
 
-public class CreateWarehouseHandler : ICommandHandler<CreateWarehouseCommand, Guid>
+public class CreateWarehouseHandler : ICommandHandler<CreateWarehouseCommand, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 

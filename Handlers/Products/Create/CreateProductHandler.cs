@@ -7,7 +7,7 @@ using Handlers.Repositories;
 
 namespace Handlers.Products.Create;
 
-public class CreateProductHandler : ICommandHandler<CreateProductCommand, Guid>
+public class CreateProductHandler : ICommandHandler<CreateProductCommand, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 
@@ -21,7 +21,7 @@ public class CreateProductHandler : ICommandHandler<CreateProductCommand, Guid>
         var productExist = _repository.GetProductByName(command.Name);
 
         if (productExist.IsSuccess)
-            return new Error("Товар уже существует", "Товар с таким именеи уже существует");
+            return new Error("Товар уже существует", "Товар с таким именем уже существует");
         
         var volume = Volume.Create(command.Wight, command.Height, command.Length);
 

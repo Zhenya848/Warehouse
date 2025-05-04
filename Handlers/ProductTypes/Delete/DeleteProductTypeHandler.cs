@@ -5,7 +5,7 @@ using Handlers.Repositories;
 
 namespace Handlers.ProductTypes.Delete;
 
-public class DeleteProductTypeHandler : ICommandHandler<Guid, Guid>
+public class DeleteProductTypeHandler : ICommandHandler<Guid, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 

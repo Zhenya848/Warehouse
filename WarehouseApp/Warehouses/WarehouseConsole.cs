@@ -89,7 +89,28 @@ public class WarehouseConsole
         
         Console.WriteLine("\nПоказать все склады\n");
         
-        var warehouses = _getWarehousesHandler.Handle().ToList();
+        string orderField = "";
+        Console.Write("Сортировать товары? 1. Да, 2. Нет: ");
+        
+        var input = Console.ReadLine();
+
+        if (input == "1")
+        {
+            var fields = new string[] { "Имя", "Размер", "Страна", "Город", "Адрес" };
+            
+            Console.WriteLine("\nВозможные поля для сортировки: ");
+            
+            for (int i = 0; i < fields.Length; i++)
+                Console.WriteLine($"{i + 1}. {fields[i]}");
+
+            var choice = Extensions.GetIntFromReadLine("\nВаш выбор: ") - 1;
+            
+            if (choice >= 0 && choice < fields.Length)
+                orderField = fields[choice];
+        }
+
+        Console.WriteLine();
+        var warehouses = _getWarehousesHandler.Handle(orderField).ToList();
 
         string name = "";
         string volume = "";
@@ -111,9 +132,9 @@ public class WarehouseConsole
 
             name += GetFieldWithSpaces($"{i + 1}. Склад {warehouse.Name}");
             volume += GetFieldWithSpaces("Объем:");
-            length += GetFieldWithSpaces($"Длина: {warehouse.Volume.Length}");
-            weight += GetFieldWithSpaces($"Ширина: {warehouse.Volume.Wight}");
-            height += GetFieldWithSpaces($"Высота: {warehouse.Volume.Height}");
+            length += GetFieldWithSpaces($"Длина: {warehouse.Volume.Length} м");
+            weight += GetFieldWithSpaces($"Ширина: {warehouse.Volume.Wight} м");
+            height += GetFieldWithSpaces($"Высота: {warehouse.Volume.Height} м");
             position += GetFieldWithSpaces("Геолокация:");
             country += GetFieldWithSpaces($"Страна: {warehouse.Location.Country}");
             city += GetFieldWithSpaces($"Город: {warehouse.Location.City}");

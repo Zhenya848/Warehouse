@@ -6,7 +6,7 @@ using Handlers.Repositories;
 
 namespace Handlers.Containers.Get;
 
-public class GetContainers : ICommandHandler<Guid, IEnumerable<Container>>
+public class GetContainers : ICommandHandler<Guid, Result<IEnumerable<Container>, Error>>
 {
     private readonly IRepository _repository;
 

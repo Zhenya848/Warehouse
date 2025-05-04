@@ -7,7 +7,7 @@ using Container = Entities.Warehouses.Container;
 
 namespace Handlers.Containers.Create;
 
-public class CreateContainerHandler : ICommandHandler<CreateContainerCommand, Guid>
+public class CreateContainerHandler : ICommandHandler<CreateContainerCommand, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 
