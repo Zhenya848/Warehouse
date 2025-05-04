@@ -295,11 +295,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseConsole\\WarehouseConsole.csproj",
-      "projectName": "WarehouseConsole",
-      "projectPath": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseConsole\\WarehouseConsole.csproj",
+      "projectUniqueName": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseApp\\WarehouseApp.csproj",
+      "projectName": "WarehouseApp",
+      "projectPath": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseApp\\WarehouseApp.csproj",
       "packagesPath": "C:\\Users\\Z\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseConsole\\obj\\",
+      "outputPath": "C:\\Users\\Z\\Desktop\\Warehouse\\WarehouseApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Visual studio SDK\\NuGetPackages",

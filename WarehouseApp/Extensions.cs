@@ -1,6 +1,6 @@
 ﻿using Entities;
 
-namespace WarehouseConsole;
+namespace WarehouseApp;
 
 public static class Extensions
 {

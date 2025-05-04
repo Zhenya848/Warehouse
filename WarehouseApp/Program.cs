@@ -2,7 +2,7 @@
 using Handlers;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseConsole;
+namespace WarehouseApp;
 
 public class Program
 {

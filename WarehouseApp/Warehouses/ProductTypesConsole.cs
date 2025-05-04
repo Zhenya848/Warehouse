@@ -2,7 +2,7 @@
 using Handlers.ProductTypes.Delete;
 using Handlers.ProductTypes.Get;
 
-namespace WarehouseConsole.Warehouses;
+namespace WarehouseApp.Warehouses;
 
 public class ProductTypesConsole
 {
@@ -57,7 +57,7 @@ public class ProductTypesConsole
         if (result.IsFailure)
             Console.WriteLine(result.Error.ToResponse());
         else
-            Console.WriteLine("Тип товара успешно удален!");
+            Console.WriteLine("\nТип товара успешно удален!");
         
         Console.ReadKey();
     }
