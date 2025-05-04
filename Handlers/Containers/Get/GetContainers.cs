@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 using Entities;
-using Entities.Clients;
+using Entities.Warehouses;
 using Handlers.Abstractions;
 using Handlers.Repositories;
 

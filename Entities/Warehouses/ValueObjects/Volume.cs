@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 
-namespace Entities.Clients.ValueObjects;
+namespace Entities.Warehouses.ValueObjects;
 
 public record Volume
 {

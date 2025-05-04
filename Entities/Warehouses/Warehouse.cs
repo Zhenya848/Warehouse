@@ -1,7 +1,7 @@
 ﻿using CSharpFunctionalExtensions;
-using Entities.Clients.ValueObjects;
+using Entities.Warehouses.ValueObjects;
 
-namespace Entities.Clients;
+namespace Entities.Warehouses;
 
 public class Warehouse
 {
@@ -55,7 +55,7 @@ public class Warehouse
             Volume = oldVolume;
 
             return new Error("Ошибка при обновлении склада", 
-                $"Заданный объем ({volume} м^3) слишком мал для хранения уже существующих контейнеров! " +
+                $"Заданный объем ({volume.VolumeValue} м^3) слишком мал для хранения уже существующих контейнеров! " +
                         $"нужный объем для хранения: {Volume.VolumeValue - FreeVolume} м^3");
         }
         
@@ -71,10 +71,12 @@ public class Warehouse
 
         if (FreeVolume < 0)
         {
+            var error = new Error("Недостаточно места", "Место в складу закончилось! " +
+                $"Превышение объема: {-FreeVolume} м^3");
+            
             Containers.Remove(container);
 
-            return new Error("Недостаточно места", "Место в складу закончилось! " +
-                $"Превышение объема: {-FreeVolume} м^3");
+            return error;
         }
         
         return Result.Success<Error>();

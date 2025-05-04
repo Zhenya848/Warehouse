@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 using Entities;
-using Entities.Clients.ValueObjects;
+using Entities.Warehouses.ValueObjects;
 using Handlers.Abstractions;
 using Handlers.Repositories;
 

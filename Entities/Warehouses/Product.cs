@@ -1,7 +1,7 @@
 ﻿using CSharpFunctionalExtensions;
-using Entities.Clients.ValueObjects;
+using Entities.Warehouses.ValueObjects;
 
-namespace Entities.Clients;
+namespace Entities.Warehouses;
 
 public class Product
 {

@@ -3,7 +3,7 @@ using CSharpFunctionalExtensions;
 using Entities;
 using Handlers.Abstractions;
 using Handlers.Repositories;
-using Container = Entities.Clients.Container;
+using Container = Entities.Warehouses.Container;
 
 namespace Handlers.Containers.Create;
 

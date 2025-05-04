@@ -1,4 +1,4 @@
-﻿using Entities.Clients;
+﻿using Entities.Warehouses;
 using Handlers.Abstractions;
 using Handlers.Repositories;
 

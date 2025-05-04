@@ -23,7 +23,7 @@ public class Application
     {
         while (true)
         {
-            Console.WriteLine("Добро пожаловать!\n");
+            Console.WriteLine("Warehouse Simulator\n");
 
             Console.WriteLine("1. Создать склад");
             Console.WriteLine("2. Создать товар");
@@ -37,7 +37,7 @@ public class Application
             Console.WriteLine("10. Удалить товар");
             Console.WriteLine("11.Удалить тип товара");
 
-            var choose = Extensions.GetFloatFromReadLine("Ваш выбор: ");
+            var choose = Extensions.GetFloatFromReadLine("\nВаш выбор: ");
 
             switch (choose)
             {

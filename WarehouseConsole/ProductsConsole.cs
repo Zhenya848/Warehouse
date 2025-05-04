@@ -1,4 +1,4 @@
-﻿using Entities.Clients;
+﻿using Entities.Warehouses;
 using Handlers.Products.Create;
 using Handlers.Products.Delete;
 using Handlers.Products.Get;

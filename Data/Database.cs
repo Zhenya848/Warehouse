@@ -1,5 +1,5 @@
 ﻿using Entities;
-using Entities.Clients;
+using Entities.Warehouses;
 
 namespace Data;
 
