@@ -1,14 +1,16 @@
-﻿namespace WarehouseConsole;
+﻿using WarehouseConsole.Warehouses;
+
+namespace WarehouseConsole;
 
 public class Application
 {
-    private readonly WarehouseConsole _warehouseConsole;
+    private readonly Warehouses.WarehouseConsole _warehouseConsole;
     private readonly ProductTypesConsole _productTypesConsole;
     private readonly ProductsConsole _productsConsole;
     private readonly ContainerConsole _containerConsole;
 
     public Application(
-        WarehouseConsole warehouseConsole, 
+        Warehouses.WarehouseConsole warehouseConsole, 
         ProductTypesConsole productTypesConsole,
         ProductsConsole productsConsole,
         ContainerConsole containerConsole)

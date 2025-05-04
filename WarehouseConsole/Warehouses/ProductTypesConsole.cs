@@ -1,9 +1,8 @@
 ﻿using Handlers.ProductTypes.Create;
 using Handlers.ProductTypes.Delete;
 using Handlers.ProductTypes.Get;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseConsole;
+namespace WarehouseConsole.Warehouses;
 
 public class ProductTypesConsole
 {

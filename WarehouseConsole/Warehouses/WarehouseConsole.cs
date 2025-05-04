@@ -4,9 +4,8 @@ using Handlers.Warehouses.Create;
 using Handlers.Warehouses.Delete;
 using Handlers.Warehouses.Get;
 using Handlers.Warehouses.Update;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseConsole;
+namespace WarehouseConsole.Warehouses;
 
 public class WarehouseConsole
 {
