@@ -1,36 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\Entities\\Entities.csproj": {}
+    "C:\\Users\\Z\\Desktop\\Warehouse\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\Entities\\Entities.csproj": {
+    "C:\\Users\\Z\\Desktop\\Warehouse\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Z\\Desktop\\Warehouse\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\belov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Z\\Desktop\\Warehouse\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Z\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Z\\Desktop\\Warehouse\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Visual studio SDK\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
-          "C:\\Users\\belov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Z\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -38,17 +41,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "CSharpFunctionalExtensions": {
               "target": "Package",
@@ -79,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

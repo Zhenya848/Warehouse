@@ -3,9 +3,8 @@ using Handlers.Products.Create;
 using Handlers.Products.Delete;
 using Handlers.Products.Get;
 using Handlers.ProductTypes.Get;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace WarehouseConsole;
+namespace WarehouseConsole.Warehouses;
 
 public class ProductsConsole
 {

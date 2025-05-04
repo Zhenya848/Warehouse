@@ -16,6 +16,12 @@ public class DeleteProductTypeHandler : ICommandHandler<Guid, Guid>
     
     public Result<Guid, Error> Handle(Guid productTypeId)
     {
+        var products = _repository.GetProducts();
+
+        if (products.Any(pti => pti.ProductType.Id == productTypeId))
+            return new Error("Ошибка при удалении типа товара",
+                $"Тип товара нельзя удалить, так как он используется в одном из продуктов");
+
         var result = _repository.DeleteProductType(productTypeId);
 
         return result;
