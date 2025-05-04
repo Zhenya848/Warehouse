@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 
-namespace Entities.Clients.ValueObjects;
+namespace Entities.Warehouses.ValueObjects;
 
 public record Location
 {
@@ -24,7 +24,7 @@ public record Location
             return ErrorTypes.IsRequired("город");
         
         if (string.IsNullOrWhiteSpace(address))
-            return ErrorTypes.IsRequired("адресс");
+            return ErrorTypes.IsRequired("адрес");
         
         var location = new Location(country, city, address);
 

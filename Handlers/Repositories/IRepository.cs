@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 using Entities;
-using Entities.Clients;
+using Entities.Warehouses;
 
 namespace Handlers.Repositories;
 

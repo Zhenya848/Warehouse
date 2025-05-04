@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 
-namespace Entities.Clients;
+namespace Entities.Warehouses;
 
 public class Container
 {

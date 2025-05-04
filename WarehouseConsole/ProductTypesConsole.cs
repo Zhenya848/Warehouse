@@ -40,7 +40,12 @@ public class ProductTypesConsole
 
     public void ProductTypeDelete()
     {
+        Console.WriteLine("\nУдалить тип товара\n");
+        
         var productTypes = _getProductTypesHandler.Handle().ToList();
+        
+        for (int i = 0; i < productTypes.Count; i++)
+            Console.WriteLine($"{i + 1}. {productTypes[i].Name}");
 
         var index = Extensions
             .GetIntFromReadLine("\nВыберите номер типа товара, который хотите удалить: ") - 1;
@@ -53,7 +58,7 @@ public class ProductTypesConsole
         if (result.IsFailure)
             Console.WriteLine(result.Error.ToResponse());
         else
-            Console.WriteLine("Тип продукта успешно удален!");
+            Console.WriteLine("Тип товара успешно удален!");
         
         Console.ReadKey();
     }

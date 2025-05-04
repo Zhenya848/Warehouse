@@ -1,4 +1,4 @@
-﻿using Entities.Clients;
+﻿using Entities.Warehouses;
 using Handlers.Containers.Delete;
 using Handlers.Warehouses.Create;
 using Handlers.Warehouses.Delete;
@@ -51,7 +51,7 @@ public class WarehouseConsole
         Console.Write("Город: ");
         var city = Console.ReadLine();
 
-        Console.Write("Адресс: ");
+        Console.Write("Адрес: ");
         var address = Console.ReadLine();
         
         var command = new CreateWarehouseCommand(name, wight, height, length, country, city, address);
@@ -189,7 +189,7 @@ public class WarehouseConsole
         Console.Write("Город: ");
         var city = Console.ReadLine();
 
-        Console.Write("Адресс: ");
+        Console.Write("Адрес: ");
         var address = Console.ReadLine();
 
         var command = new UpdateWarehouseCommand(warehouse.Id, name, wight, height, length, country, city, address);
