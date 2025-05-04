@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "oah7Imu4mE0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\belov\\OneDrive\\Рабочий стол\\Projects\\CSharp\\Console\\WarehouseBackend\\Data\\Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\belov\\.nuget\\packages\\csharpfunctionalextensions\\3.6.0\\csharpfunctionalextensions.3.6.0.nupkg.sha512",
+    "C:\\Users\\belov\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.4\\microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "C:\\Users\\belov\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.4\\microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\belov\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.2\\microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "C:\\Users\\belov\\.nuget\\packages\\scrutor\\6.0.1\\scrutor.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
