@@ -5,7 +5,7 @@ using Handlers.Repositories;
 
 namespace Handlers.Containers.Delete;
 
-public class DeleteContainerHandler : ICommandHandler<DeleteContainerCommand, Guid>
+public class DeleteContainerHandler : ICommandHandler<DeleteContainerCommand, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 

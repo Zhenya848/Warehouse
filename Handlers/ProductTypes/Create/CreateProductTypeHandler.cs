@@ -5,7 +5,7 @@ using Handlers.Repositories;
 
 namespace Handlers.ProductTypes.Create;
 
-public class CreateProductTypeHandler : ICommandHandler<string, Guid>
+public class CreateProductTypeHandler : ICommandHandler<string, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 

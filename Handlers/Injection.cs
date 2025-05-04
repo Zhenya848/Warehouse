@@ -11,8 +11,7 @@ public static class Injection
         
         services.Scan(scan => scan.FromAssemblies(assembly)
             .AddClasses(classes => classes.AssignableToAny(
-                typeof(ICommandHandler<,>),
-                typeof(IHandler<>)))
+                typeof(ICommandHandler<,>)))
             .AsSelfWithInterfaces()
             .WithLifetime(ServiceLifetime.Scoped));
 

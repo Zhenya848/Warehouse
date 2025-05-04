@@ -4,13 +4,13 @@ namespace WarehouseApp;
 
 public class Application
 {
-    private readonly Warehouses.WarehouseConsole _warehouseConsole;
+    private readonly WarehouseConsole _warehouseConsole;
     private readonly ProductTypesConsole _productTypesConsole;
     private readonly ProductsConsole _productsConsole;
     private readonly ContainerConsole _containerConsole;
 
     public Application(
-        Warehouses.WarehouseConsole warehouseConsole, 
+        WarehouseConsole warehouseConsole, 
         ProductTypesConsole productTypesConsole,
         ProductsConsole productsConsole,
         ContainerConsole containerConsole)

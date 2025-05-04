@@ -83,8 +83,29 @@ public class ProductsConsole
         }
         
         Console.WriteLine("Показать все товары\n");
+
+        string orderField = "";
+        Console.Write("Сортировать товары? 1. Да, 2. Нет: ");
         
-        var products = _getProductsHandler.Handle().ToList();
+        var input = Console.ReadLine();
+
+        if (input == "1")
+        {
+            var fields = new string[] { "Имя", "Тип", "Размер" };
+            
+            Console.WriteLine("\nВозможные поля для сортировки: ");
+            
+            for (int i = 0; i < fields.Length; i++)
+                Console.WriteLine($"{i + 1}. {fields[i]}");
+
+            var choice = Extensions.GetIntFromReadLine("\nВаш выбор: ") - 1;
+            
+            if (choice >= 0 && choice < fields.Length)
+                orderField = fields[choice];
+        }
+
+        Console.WriteLine();
+        var products = _getProductsHandler.Handle(orderField).ToList();
 
         string name = "";
         string type = "";
@@ -92,6 +113,7 @@ public class ProductsConsole
         string length = "";
         string weight = "";
         string height = "";
+        string totalVolume = "";
         
         for (int i = 0; i < products.Count; i++)
         {
@@ -100,9 +122,10 @@ public class ProductsConsole
             name += GetFieldWithSpaces($"{i + 1}. Название: {warehouse.Name}");
             type += GetFieldWithSpaces($"Тип: {warehouse.ProductType.Name}");
             volume += GetFieldWithSpaces("Объем:");
-            length += GetFieldWithSpaces($"Длина: {warehouse.Volume.Length}");
-            weight += GetFieldWithSpaces($"Ширина: {warehouse.Volume.Wight}");
-            height += GetFieldWithSpaces($"Высота: {warehouse.Volume.Height}");
+            length += GetFieldWithSpaces($"Длина: {warehouse.Volume.Length} м");
+            weight += GetFieldWithSpaces($"Ширина: {warehouse.Volume.Wight} м");
+            height += GetFieldWithSpaces($"Высота: {warehouse.Volume.Height} м");
+            totalVolume += GetFieldWithSpaces($"Размер: {warehouse.Volume.VolumeValue} м^3");
         }
         
         Console.WriteLine(name);
@@ -111,6 +134,7 @@ public class ProductsConsole
         Console.WriteLine(length);
         Console.WriteLine(weight);
         Console.WriteLine(height);
+        Console.WriteLine(totalVolume);
         
         Console.ReadKey();
 

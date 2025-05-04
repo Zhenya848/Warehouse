@@ -6,7 +6,7 @@ using Handlers.Repositories;
 
 namespace Handlers.Warehouses.Update;
 
-public class UpdateWarehouseHandler : ICommandHandler<UpdateWarehouseCommand, Guid>
+public class UpdateWarehouseHandler : ICommandHandler<UpdateWarehouseCommand, Result<Guid, Error>>
 {
     private readonly IRepository _repository;
 
